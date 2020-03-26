@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Operadores Lógicos</title>
+</head>
+<body>
+    <script>
+        // && AND
+        // || OU
+        // != 
+        
+        var sexo = "M", idade = 21;
+        if(sexo === "M" && idade === 21 ){ //Verifica a igaldade das operações se ambas forem correspondentes exibe ok, sendo tbm que a condição pode ser uma verificação se é maior que 21 ou menos, depende do dontexto
+            console.log('OK');
+        }
+
+        if(sexo === "M" || idade === 21){ //se ao menos uma das condiçoes forem verdadeiras ira entrar na condicional
+            console.log('OK');
+        }
+
+        if(sexo !== 'M'){ // verifica a negação. SE não for masculino ele vai entrar na condição
+            console.log('OK');
+        }
+        // a intenção do contexo abaixo é para armazenar o resultado da condição em uma variavel se true or false
+        var masculino;
+        if(sexo === 'M'){
+            masculino = true;
+        }else{
+            masculino = false;
+        }
+        console.log(masculino);
+    </script>
+</body>
+</html>
