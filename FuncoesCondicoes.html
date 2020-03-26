@@ -18,13 +18,41 @@
         }
         var mediaFinal = media(60,40,50,80); //instacia da funcao com os parametros para o calculo
       
-           if (mediaFinal > 70){ //estrutura de de condição if
-            alert('Aprovado')
-        }else{
-            alert("Resprovado")
-        };
+         
 
         console.log(mediaFinal); //mostra a media no log
+
+
+        function retornaSexo(sexo){
+            //M, F
+            //Masculino, Feminino
+            if (sexo === 'M'){ // = para atribuição; == para comparar valores; === para comparar valores e tipo da variavel
+                return 'Masculimo';
+            } else if (sexo === 'F'){
+                return 'Feminino';
+            }else{
+                return 'Outro';
+            }
+        }
+
+        var resultado = retornaSexo('jdah');
+        console.log(resultado);
+
+
+        function retornaSexoS(sexo){
+            //M, F
+            //Masculino, Feminino
+           switch(sexo){
+               case 'M':
+                   return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return 'Outro'
+           }
+        }
+        var result = retornaSexoS('sdg');
+        console.log(result);
 
     </script>
 </body>
