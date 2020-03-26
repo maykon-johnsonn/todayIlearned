@@ -11,20 +11,20 @@
 
 <body>
     <script>
-        function media(nota1, nota2, nota3, nota4){
-            var mediaFinal = (nota1 + nota2 + nota3 + nota4) / 4;
+        function media(nota1, nota2, nota3, nota4){ // Crija a função e define os parametros a serem passados
+            var mediaFinal = (nota1 + nota2 + nota3 + nota4) / 4; //declara uma variavel dentro da função para receber uma operação matematica obs: a declaração dessa variavel so esta disponivel dentro da função em questão
 
-            return mediaFinal;
+            return mediaFinal; //retorna o resultado da operação
         }
-        var mediaFinal = media(60,40,50,80);
+        var mediaFinal = media(60,40,50,80); //instacia da funcao com os parametros para o calculo
       
-           if (mediaFinal > 70){
+           if (mediaFinal > 70){ //estrutura de de condição if
             alert('Aprovado')
         }else{
             alert("Resprovado")
         };
 
-        console.log(mediaFinal);
+        console.log(mediaFinal); //mostra a media no log
 
     </script>
 </body>
