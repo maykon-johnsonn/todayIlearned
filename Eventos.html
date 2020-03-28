@@ -6,11 +6,12 @@
 </head>
 <body onload="Alerta()">
     <div class="app">
-        <button onclick="Clicou()"> Clique em mim</button>
-        <button onmouseover="passouOMouse()"> passe o mouse em mim</button>
+        <button onclick="Clicou()"> Clique em mim</button> <!--O evento onclick faz com que chame uma função ao clicar no elemento em questão-->
+        <button onmouseover="passouOMouse()"> passe o mouse em mim</button><!--O evento on vouse over faz com que execute uma ação ao passar o mouse por cima do elemento-->
     </div>
     <script>
-        function Alerta(){
+        //funções de alerta para serem chamados nos eventos html
+        function Alerta(){ 
             alert("O sistema carregou");
         }
         function Clicou(){
@@ -19,6 +20,7 @@
         function passouOMouse(){
             alert("Voce passou o mouse");
         }
+        //OBS: Há varios eventos que podem ser aplicados, como, ao pressionar uma tecla, ao soltar tecla, ao soltar o click do mouse entre outros de acordo com a necessidade.
     </script>
 </body>
 </html>
