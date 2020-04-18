@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <form action="/" id="formBoot" method="post">
+                    <div class="form-group">
+                        <label for="nomeBoot">Nome:</label>
+                        <input type="text" class="form-control" id="nomeBoot" name="nomeBoot" value="Maykon"
+                            placeholder="Informe seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label title="E-mail" for="emailBoot">E-mail:</label>
+                        <input type="email" title="Insira seu e-mail" class="form-control" id="emailBoot"
+                            name="emailBoot" placeholder="ex: maykon@email.com">
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="recebeEmail" name="recebeEmail">
+                        <label class="custom-control-label" for="recebeEmail">Receber e-mail?</label>
+                    </div>
+                    <br>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="formaTelefoneBoot" name="formaContatoBoot" class="custom-control-input">
+                        <label class="custom-control-label" for="formaTelefoneBoot">Por Telefone</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="formaEmailBoot" name="formaContatoBoot" class="custom-control-input">
+                        <label class="custom-control-label" for="formaEmailBoot">Por e-mail</label>
+                    </div>
+                    <br>
+                    <select class="custom-select" name="estadoSelectBoot" id="estadoSelectBoot" multiple>
+                        <option selected>Selecione um estado</option>
+                        <option value="CE1">CE</option>
+                        <option value="SP2">SP</option>
+                        <option value="RJ3">RJ</option>
+                    </select>
+                    <br>
+                    <br>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>
+                    <br>
+                </form><!--Form-->
+            </div>
+        </div><!--row-->
+    </div><!--Container-->
+    <footer>
+
+    </footer>
+    <script src="./js/jquery-3.5.0.min.js"></script>
+    <script src=" https://unpkg.com/@popperjs/core@2/dist/umd/popper.js "> </script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>
